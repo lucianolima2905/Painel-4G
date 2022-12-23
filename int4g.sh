@@ -60,7 +60,7 @@ echo ""
 echo -e "\033[1;33mAGUARDE..."
 echo ""    
 cd /var/www/html
-wget https://raw.githubusercontent.com/TH-NET/Painel4G/main/int4g.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/lucianolima2905/Painel-4G/main/int4g.sh > /dev/null 2>&1
 unzip internet4g.zip > /dev/null 2>&1
 chmod 0777 img
 cd img
@@ -81,7 +81,7 @@ echo "Altere no codigo abaixo SUASENHAAQUI e coloque a senha que utilizou durant
 sleep 5
 nano /var/www/html/conexao.php
 clear
-wget https://raw.githubusercontent.com/TH-NET/Painel4G/main/net.sql
+wget https://raw.githubusercontent.com/lucianolima2905/Painel-4G/main/net.sql
 echo "Digite a senha do PhpMyAdmin"
 mysql -h localhost -u root -p net < net.sql
 rm net.sql
