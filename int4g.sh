@@ -81,7 +81,7 @@ echo "Altere no codigo abaixo SUASENHAAQUI e coloque a senha que utilizou durant
 sleep 5
 nano /var/www/html/conexao.php
 clear
-wget https://raw.githubusercontent.com/TH-NET/Painel4G/main/net.sql
+wget https://raw.githubusercontent.com/lucianolima2905/Painel-4G/main/net.sql
 echo "Digite a senha do PhpMyAdmin"
 mysql -h localhost -u root -p net < net.sql
 rm net.sql
