@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Tempo de geração: 29/09/2017 às 21:12
--- Versão do servidor: 5.5.57-0+deb8u1
--- Versão do PHP: 5.6.30-0+deb8u1
+-- Tempo de geraï¿½ï¿½o: 29/09/2017 ï¿½s 21:12
+-- Versï¿½o do servidor: 5.5.57-0+deb8u1
+-- Versï¿½o do PHP: 5.6.30-0+deb8u1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `arquivo` (
   `url` varchar(250) DEFAULT NULL,
   `file` varchar(250) DEFAULT NULL,
   `tipo` varchar(250) DEFAULT NULL,
-  `operadora` varchar(250) DEFAULT NULL
+  `servidor` varchar(250) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `login` (
   `senha2` varchar(250) DEFAULT NULL,
   `expiredate` varchar(250) DEFAULT NULL,
   `cota` varchar(250) NOT NULL DEFAULT '0',
-  `operadora` varchar(250) DEFAULT NULL,
+  `servidor` varchar(250) DEFAULT NULL,
   `derrubado` varchar(250) DEFAULT '0',
   `bloqueado` varchar(11) NOT NULL DEFAULT 'N',
   `LimiteTeste` varchar(250) NOT NULL DEFAULT '0',
@@ -122,8 +122,8 @@ CREATE TABLE IF NOT EXISTS `login` (
 -- Fazendo dump de dados para tabela `login`
 --
 
-INSERT INTO `login` (`id`, `id_cad`, `acesso`, `nome`, `login`, `senha`, `senha2`, `expiredate`, `cota`, `operadora`, `derrubado`, `bloqueado`, `LimiteTeste`, `data`, `ValorCobrado`, `msginterna`, `email`) VALUES
-(1, 1, 1, 'admin', 'admin', 'admin', '', '', '999998932394', '', '0', 'N', '0', '', '10.00', '', '');
+INSERT INTO `login` (`id`, `id_cad`, `acesso`, `nome`, `login`, `senha`, `senha2`, `expiredate`, `cota`, `servidor`, `derrubado`, `bloqueado`, `LimiteTeste`, `data`, `ValorCobrado`, `msginterna`, `email`) VALUES
+(1, 1, 1, 'admin', 'admin', 'admin', '', '', '1000000', '', '0', 'N', '0', '', '10.00', '', '');
 
 -- --------------------------------------------------------
 
@@ -223,77 +223,77 @@ CREATE TABLE IF NOT EXISTS `urlteste` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Índices de tabelas apagadas
+-- ï¿½ndices de tabelas apagadas
 --
 
 --
--- Índices de tabela `arquivo`
+-- ï¿½ndices de tabela `arquivo`
 --
 ALTER TABLE `arquivo`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `chave`
+-- ï¿½ndices de tabela `chave`
 --
 ALTER TABLE `chave`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `config_suporte`
+-- ï¿½ndices de tabela `config_suporte`
 --
 ALTER TABLE `config_suporte`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `icone_perfil`
+-- ï¿½ndices de tabela `icone_perfil`
 --
 ALTER TABLE `icone_perfil`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `imagem_perfil`
+-- ï¿½ndices de tabela `imagem_perfil`
 --
 ALTER TABLE `imagem_perfil`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `login`
+-- ï¿½ndices de tabela `login`
 --
 ALTER TABLE `login`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `relatorio`
+-- ï¿½ndices de tabela `relatorio`
 --
 ALTER TABLE `relatorio`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `servidor`
+-- ï¿½ndices de tabela `servidor`
 --
 ALTER TABLE `servidor`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `sms`
+-- ï¿½ndices de tabela `sms`
 --
 ALTER TABLE `sms`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `suporte`
+-- ï¿½ndices de tabela `suporte`
 --
 ALTER TABLE `suporte`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `suporteresp`
+-- ï¿½ndices de tabela `suporteresp`
 --
 ALTER TABLE `suporteresp`
  ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `urlteste`
+-- ï¿½ndices de tabela `urlteste`
 --
 ALTER TABLE `urlteste`
  ADD PRIMARY KEY (`id`);
